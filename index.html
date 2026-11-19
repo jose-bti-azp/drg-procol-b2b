@@ -103,7 +103,7 @@ header.scrolled{background:rgba(247,240,236,.94);backdrop-filter:blur(10px);box-
 .what{background:var(--cream)}
 .grid-2{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
 .what .img-frame{position:relative}
-.what .img-frame img{border-radius:4px;aspect-ratio:4/4.3;object-fit:cover;width:100%}
+.what .img-frame img{border-radius:4px;aspect-ratio:4/3.8;object-fit:cover;object-position:50% 0;width:100%}
 .what .img-frame .tag{position:absolute;left:-26px;bottom:34px;background:var(--green);color:#fff;padding:22px 26px;max-width:270px;border-radius:2px}
 .what .img-frame .tag b{font-family:var(--serif);font-size:24px;font-weight:500;display:block;line-height:1.15;margin-bottom:6px;color:var(--gold-soft)}
 .what .img-frame .tag span{font-size:16.5px}
@@ -142,7 +142,7 @@ header.scrolled{background:rgba(247,240,236,.94);backdrop-filter:blur(10px);box-
 .cabin h2 em{color:var(--gold-2)}
 .cabin .lead{color:#ece5d8}
 .cabin-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:64px}
-.cabin-head img{border-radius:4px;width:100%;height:auto}
+.cabin-head img{border-radius:4px;width:100%;height:auto;aspect-ratio:9/8;object-fit:cover;object-position:50% 100%}
 .cabin-head h2{margin:16px 0 22px}
 .proto-meta{display:flex;gap:30px;margin-top:30px;flex-wrap:wrap}
 .proto-meta div b{display:block;font-family:var(--serif);font-size:40px;font-weight:500;color:var(--gold-2);line-height:1}
@@ -183,7 +183,7 @@ header.scrolled{background:rgba(247,240,236,.94);backdrop-filter:blur(10px);box-
 .line-head .lead{margin:0 auto}
 .line-photo{margin:0 0 70px;border-radius:4px;overflow:hidden;background:#b9806b}
 .line-photo img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
-@media (min-width:700px){.line-photo img{aspect-ratio:16/10;object-position:50% 78%}}
+@media (min-width:700px){.line-photo img{aspect-ratio:4/3;object-position:50% 56%}}
 @media (max-width:820px){.line-photo{margin-bottom:50px}}
 .families{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .fam{background:#fff;border-radius:3px;padding:34px 30px 30px;border-top:3px solid var(--gold)}
@@ -284,6 +284,7 @@ footer img{height:40px;width:auto;filter:invert(1)}
 /* logo · recuerdo de marca */
 .logo-full{display:block;height:auto;width:100%}.brand-mark{display:flex;justify-content:center;margin-top:80px}
 .brand-mark.top{margin:-30px 0 80px}
+.signs-quote+.brand-mark{margin-top:48px}.what:has(.signs-quote+.brand-mark){padding-bottom:64px}
 .brand-mark img{width:min(240px,55vw);height:auto;opacity:.85}.contact .logo-full{width:min(220px,55vw);margin:0 auto 34px}
 
 /* reveal */
@@ -448,6 +449,7 @@ footer img{height:40px;width:auto;filter:invert(1)}
     </div>
 
     <p class="quote signs-quote rv">«Las cremas de colágeno ponen colágeno encima de la piel, y ahí se queda. Pro Collagen hace que tu piel vuelva a fabricar el suyo. Por eso no es una crema de colágeno: es un tratamiento de firmeza.»</p>
+    <div class="brand-mark rv"><img src="img/logo-drgrandel-negro.png" width="1000" height="240" alt="Dr. Grandel · we know your skin." loading="lazy"></div>
   </div>
 </section>
 
