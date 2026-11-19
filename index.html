@@ -142,7 +142,7 @@ header.scrolled{background:rgba(247,240,236,.94);backdrop-filter:blur(10px);box-
 .cabin h2 em{color:var(--gold-2)}
 .cabin .lead{color:#ece5d8}
 .cabin-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:64px}
-.cabin-head img{border-radius:4px;aspect-ratio:16/10;object-fit:cover;width:100%}
+.cabin-head img{border-radius:4px;width:100%;height:auto}
 .cabin-head h2{margin:16px 0 22px}
 .proto-meta{display:flex;gap:30px;margin-top:30px;flex-wrap:wrap}
 .proto-meta div b{display:block;font-family:var(--serif);font-size:40px;font-weight:500;color:var(--gold-2);line-height:1}
@@ -280,7 +280,11 @@ header.scrolled{background:rgba(247,240,236,.94);backdrop-filter:blur(10px);box-
 
 footer{background:var(--green-ink);color:#ece5d8;padding:46px 0;font-size:16.5px}
 footer .f{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-footer img{height:18px;width:auto}
+footer img{height:40px;width:auto;filter:invert(1)}
+/* logo · recuerdo de marca */
+.logo-full{display:block;height:auto;width:100%}.brand-mark{display:flex;justify-content:center;margin-top:80px}
+.brand-mark.top{margin:-30px 0 80px}
+.brand-mark img{width:min(240px,55vw);height:auto;opacity:.85}.contact .logo-full{width:min(220px,55vw);margin:0 auto 34px}
 
 /* reveal */
 .js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
@@ -360,6 +364,7 @@ footer img{height:18px;width:auto}
 <!-- QUÉ ES -->
 <section class="what" id="procollagen">
   <div class="wrap">
+    <div class="brand-mark top rv"><img src="img/logo-drgrandel-negro.png" width="1000" height="240" alt="Dr. Grandel · we know your skin." loading="lazy"></div>
     <div class="grid-2">
       <div class="img-frame rv">
         <img src="img/piel-capa.jpg" alt="Concentrado aplicado sobre una capa de piel, a escala celular" loading="lazy">
@@ -450,7 +455,7 @@ footer img{height:18px;width:auto}
           <div><b>6</b><span>Sesiones por programa</span></div>
         </div>
       </div>
-      <img class="rv" src="img/cabina-concentrate.jpg" alt="Pro Collagen Concentrate de Dr. Grandel" loading="lazy">
+      <img class="rv" src="img/cabina-concentrate.jpg" width="1200" height="1200" alt="Pro Collagen Concentrate de Dr. Grandel" loading="lazy">
     </div>
 
 <!-- CABINA
@@ -542,6 +547,7 @@ footer img{height:18px;width:auto}
         <li><b>Ampoule Selection Collagen Boost</b>Ampolla de refuerzo</li>
       </ul>
     </div>
+    <div class="brand-mark rv"><img src="img/logo-drgrandel-negro.png" width="1000" height="240" alt="Dr. Grandel · we know your skin." loading="lazy"></div>
   </div>
 </section>
 
@@ -586,6 +592,7 @@ footer img{height:18px;width:auto}
       <figure class="ph tall"><img src="img/formacion-producto.jpg" alt="Expositor de la línea Pro Collagen durante la formación" loading="lazy" style="object-position:50% 40%"><figcaption>Producto y protocolo</figcaption></figure>
       <figure class="ph tall"><img src="img/formacion-diploma.jpg" alt="Entrega de diploma Dr. Grandel a una profesional" loading="lazy" style="object-position:50% 30%"><figcaption>Diploma Dr. Grandel</figcaption></figure>
     </div>
+    <div class="brand-mark rv"><img src="img/logo-drgrandel-negro.png" width="1000" height="240" alt="Dr. Grandel · we know your skin." loading="lazy"></div>
   </div>
 </section>
 
@@ -614,6 +621,7 @@ footer img{height:18px;width:auto}
 <!-- CONTACTO -->
 <section class="contact" id="contacto">
   <div class="wrap">
+    <img class="logo-full rv" src="img/logo-drgrandel-negro.png" width="1000" height="240" alt="Dr. Grandel · we know your skin." loading="lazy">
     <span class="eyebrow rv">Hablemos</span>
     <h2 class="rv">¿Quieres incorporar <em>Pro Collagen</em> a tu centro?</h2>
     <p class="lead rv">Escríbenos o llámanos. Te contamos cómo trabajar la línea en cabina y en venta, y organizamos la formación de tu equipo.</p>
@@ -642,7 +650,7 @@ footer img{height:18px;width:auto}
 
 <footer>
   <div class="wrap f">
-    <img src="img/wordmark-white.svg" alt="Dr. Grandel">
+    <img src="img/logo-drgrandel-negro.png" width="1000" height="240" alt="Dr. Grandel · we know your skin.">
     <span>Dr. Grandel Spain · Barcelona</span>
     <a href="aviso-legal.html">Aviso legal y privacidad</a>
   </div>
